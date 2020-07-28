@@ -12,9 +12,9 @@ namespace CRUDDemo.Controllers
         EmployeeDAL employeeDAL = new EmployeeDAL();
         public IActionResult Index()
         {
-            List<EmployeeInfo> emplist = new List<EmployeeInfo>();
-            emplist = employeeDAL.Getallemp().ToList();
-            return View(emplist);
+            List<EmployeeInfo> employeelist = new List<EmployeeInfo>();
+            employeelist = employeeDAL.Getallemp().ToList();
+            return View(employeelist);
         }
         
         [HttpGet]
